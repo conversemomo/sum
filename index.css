@@ -3,11 +3,13 @@
 *{
 	margin:0;
 	padding:0;
+	font-family:Microsoft JhengHei,arial,helvetica,sans-serif; 
 }
 
 a:link{
 	color:#000;
 	text-decoration:none;
+	font-size:20px;
 }
 
 a:visited{
@@ -28,6 +30,8 @@ a:active{
 nav{
 	padding-left:75%;
 	padding-top:40px;
+	position:fixed;
+	z-index:99999;
 }
 
 nav ul{
@@ -39,18 +43,18 @@ height:22px;
 line-height:22px; 
 float:left; 
 overflow:hidden; 
-text-align:center; 
+text-align:center;
 } 
 
 nav a{ 
-width:100px;
+width:90px;
 float:left;
 overflow:hidden;
 } 
 
 nav a:hover{
 	padding-top:22px;
-	font-size:14px;
+	font-size:18px;
 } 
 
 nav span{
@@ -59,23 +63,96 @@ nav span{
 	} 
 	
 
-#banner{
+header{
 	background-image:url(images/pic01.jpg);
-	height:550px;
+	height:805px;
 	width:100%;
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 
-
-#contactbox,#aboutbox,#detailbox{
-	background-color:#624C3F;
-	padding:30px;
+#aboutbox{
+	background-image:url(images/pic02.jpg);
+	height:550px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:150px 100px 100px 100px;
 	color:#FFF;
-	text-align:center;
 	font-size:36px;
 }
 
+
+#aboutword{
+	color:#894923;
+	width:500px;
+	height:300px;
+	font-size:18px;
+	float:left;
+	padding-left:100px;
+	margin-top:-90px;
+	
+}
+
+.big{
+	color:#000;
+	font-size:24px;
+}
+
+#bw{
+	padding:10px;
+	background-color:#FFF;
+	text-align:center;
+	line-height:2em;
+	opacity:0.7;
+}
+
+#sw_one{
+	padding:30px;
+	background-color:#FFF;
+	text-align:center;
+	line-height:2em;
+	opacity:0.7;
+}
+
+.smallword{
+	color:#000;
+	text-align:left;
+	padding-left:20px;
+}
+
+#contactbox,#detailbox{
+	clear:both;
+	height:570px;
+}
+
+#detailbox{
+	background-color:#0C9;
+}
+
+.detail{
+	height:150px;
+	width:10%;
+	float:left;
+	padding-left:100px;
+	text-align:center;
+}
+
+#wde{
+	width:98%;
+}
+
+.detail p{
+	padding-left:35px;
+	width:100px;
+}
+#de{
+	padding:10px 20%;
+}
+
+#contactbox{
+	padding-top:80px;
+}
 	.require{
 	    display:inline-block;
 	    color:#69C;
