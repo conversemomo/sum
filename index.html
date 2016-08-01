@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-       <title>維鬘2016暑期活動</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>維鬘2016暑期活動</title>
 <link rel="stylesheet" type="text/css" href="index.css">
 <script src="jquery-2.1.4.js"></script>
     <script src="jquery-ui.js"></script>
-<script>
+    <script>
         $(function () {
             //scroll down
             $("nav a").bind('click', function (event) {
@@ -32,35 +28,91 @@
             });
         });
     </script>
-  </head>
-  <body>
-<header id="header" class="page-header">
+    <Script Language="JavaScript">
+function FtmFormChk()
+{
+	if( document.FTM_form.name.value == "" )
+	{
+		alert("請輸入姓名.");
+		document.FTM_form.name.focus();
+		return false;
+	}
+	flg = false;
+	var form_name = document.getElementById("FTM_form");
+
+	if (form_name.sex.value != undefined)
+	{
+		if ( form_name.sex.checked==true )flg=true;
+	}
+	else 
+	{   
+		for (var i=0; i<form_name.sex.length; i++)
+		{
+				if (form_name.sex[i].checked==true)
+			{
+				flg=true;
+				break;
+			}
+		}
+	}
+	
+	if (!flg){	
+		alert("請選擇性別");
+		return false;
+	}
+	else{
+		flg=false;
+	}
+	if ( document.FTM_form.YYYY[0].selected == true )
+	{
+		alert("請選擇年份.");
+		document.FTM_form.YYYY.focus();
+		return false;	
+	}
+	if ( document.FTM_form.month[0].selected == true )
+	{
+		alert("請選擇月份.");
+		document.FTM_form.month.focus();
+		return false;	
+	}
+	if ( document.FTM_form.day[0].selected == true )
+	{
+		alert("請選擇日期.");
+		document.FTM_form.day.focus();
+		return false;	
+	}
+	if( document.FTM_form.phone.value == "" )
+	{
+		alert("請輸入電話.");
+		document.FTM_form.phone.focus();
+		return false;
+	}
+	if( document.FTM_form.email.value == "" )
+	{
+		alert("請輸入信箱.");
+		document.FTM_form.email.focus();
+		return false;
+	}
+	return true;
+}
+</Script>
+</head>
+<body>
+<header>
 <nav>
 <ul>
-<li><a href="#header"><span>活動首頁</span>Home</a> </li>
-<li><a href="#welcome-to-github-pages"><span>關於活動</span>About</a> </li>
+<li><a href="header"><span>活動首頁</span>Home</a> </li>
+<li><a href="#about"><span>關於活動</span>About</a> </li>
 <li><a href="#detail"><span>關於細節</span>Detail</a> </li>
 <li><a href="#contact"><span>我要報名</span>Contact</a> </li>
 </ul>
 </nav>
-<div id="inro">
-<div id="contentword">
-<img id="logo" src="images/logo.png"><p class="number">2016<br>
-<img class="titleword" src="images/title.png">
+<div id="banner">
 </div>
-<div id="time">
-<p class="titledeital">&nbsp;時&nbsp;&nbsp; 間 </p>
-<p class="titledeital">參加費用</p>
-<p class="titledeital">自行攜帶 </p></div>
-<div id="dw">
-<p>7月2日- 7月3日（星期六 / 日) </p>
-<p>$ 1800 （供應健康素食和點心）</p> 
-<p> 一件舊衣服</p>
-</div>
-</header> 
-
-<div id="about"><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+</header>
+<div id="about">
 <div id="aboutbox">
+
 <div id="aboutword">
 <div id="bw">
   <p class="big">維鬘2016年</p>
@@ -94,61 +146,10 @@
     </div>
 </div>
 </div>
-
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+</div>
 <div id=detail>
 <div id=detailbox>
-
-<div id="ce">
-<h1 class="course">Course Outline</h1>
-<p class="chcourse">課程大綱</p>
-<p class="place">活動地點與電話：(02)2672-0997&nbsp; 三峽區插角里 東眼20號&nbsp; 金敏山“維鬘禪林＂</p>
-<p class="place">集合地點：報到集合解散地點:捷運台電大樓(一號出口)</p>
-</div>
-<div id="all">
-<div id="jtwo">
-<div id="timelineone">
-<p>07 : 30~  <br>
-08 : 40 - 09 : 30  <br>
-09 : 45 - 12 : 00  <br>
-12 : 05 - 13 : 45  <br>
-13 : 50 - 16 : 50 <br>
-17 : 10 - 18 : 30  <br>
-19 : 10 - 21 : 20  <br>
-21 : 30 - 22 : 00  </p>
-</div>
-<div id="conone">
-<p>報到 + 認識彼此<br>
-手工購物袋製作 『請記得帶一件舊衣服』  <br>
-認識環境與採菜趣<br>
-午餐 + 午休<br>
-挖竹趣 + 手作火把教學<br>
-搭帳棚 + BBQ<br>
-營火晚會<br>
-禪修＋休息</p>
-</div>
-<div id="timelinetwo">
-<p>07 : 30~  <br>
-08 : 40 - 09 : 30  <br>
-09 : 45 - 12 : 00  <br>
-12 : 05 - 13 : 45  <br>
-13 : 50 - 16 : 50 <br>
-17 : 10 - 18 : 30  <br>
-19 : 10 - 21 : 20  <br>
-21 : 30 - 22 : 00  </p>
-</div>
-<div id="contwo">
-<p>報到 + 認識彼此<br>
-手工購物袋製作 『請記得帶一件舊衣服』  <br>
-認識環境與採菜趣<br>
-午餐 + 午休<br>
-挖竹趣 + 手作火把教學<br>
-搭帳棚 + BBQ<br>
-營火晚會<br>
-禪修＋休息</p>
-</div>
-</div>
-</div>
+<img id="wde" src="images/wordde.png">
 <section id="de">
 <div id="camp" class="detail">
 <img src="images/icon_01.png">
@@ -169,7 +170,7 @@
 </section>
 </div>
 
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><div id=contact>
+<div id=contact>
 <div id=contactbox>
 <form method="post" action="http://www.devisetop.com/ftm.php?id=2805&snumber=80A580I20P" name="FTM_form" id="FTM_form" onsubmit='return FtmFormChk();'>
 
@@ -312,16 +313,16 @@
             <input type="text"  name="phone" class="input-textarea"id="bname" />
         </div>
 	<br/>
+
+
+	<br/>
         <div class="buttons">
             <input type="submit" value="報名" />
-        </div> 
-  </form>  
- 
-  </div>
+        </div>
+  </form>  </div>
 </div>
+<div id="footer">
+如有疑問，請撥打電話：0935-375-439   (02)-2369-3998
 </div>
-      <footer class="site-footer">
-        <span class="site-footer-credits">如有疑問，請撥打電話：0935-375-439 (02)-2369-3998</span>
-      </footer>
-  </body>
+</body>
 </html>
