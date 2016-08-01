@@ -8,8 +8,6 @@
 	font-family:Microsoft JhengHei,arial,helvetica,sans-serif; 
 }
 
-/*活動首頁開始*/
-
 a:link{
 	color:#000;
 	text-decoration:none;
@@ -32,8 +30,8 @@ a:active{
 }
 
 nav{
-	padding-left:67%;
-	margin-top:-30px;
+	padding-left:75%;
+	padding-top:40px;
 	position:fixed;
 	z-index:99999;
 }
@@ -68,81 +66,16 @@ nav span{
 	
 
 header{
-	height:810px;
+	background-image:url(images/pic01.jpg);
+	height:805px;
 	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
 }
-
-#inro{
-	margin-left:35%;
-	margin-top:15%;
-	width:700px;
-	height:200px;
-	background-color:#FFF;
-	opacity:0.9;
-	text-align:left;
-	color:#000;
-}
-
-#logo{
-	width:150px;
-	padding-left:40px;
-}
-
-.number{
-	font-size:20px;
-	padding-left:140px;
-	margin-top:-55px;
-}
-
-.titleword{
-	padding-top:10px;
-	margin-left:-100px;
-	width:230px;
-}
-
-.titledeital{
-	padding:3px;
-	background-color:#694B39;
-	color:#FFF;
-	width:70px;
-	text-align:center;
-	margin-top:7px;
-	font-size:14px;
-}
-
-.aboutworddeital{
-	padding-left:90px;
-	
-}
-
-#dw{
-	padding-top:70px;
-	padding-left:90px;
-	font-size:14px;
-	color:#694B39;
-}
-
-#dw p{
-	padding-top:13px;
-}
-#contentword{
-	float:left;
-}
-
-#time{
-	padding-left:20px;
-	padding-top:70px;
-	padding-right:20px;
-	float:left;
-}
-
-/*活動首頁結束*/
-
-/*關於活動開始*/
 
 #aboutbox{
 	background-image:url(images/pic02.jpg);
-	height:815px;
+	height:550px;
 	width:100%;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -191,110 +124,37 @@ header{
 	padding-left:20px;
 }
 
-/*關於活動結束*/
-
-/*活動細節開始*/
-
-#detailbox{
+#contactbox,#detailbox{
 	clear:both;
-	height:530px;
-}
-
-#ce{
-	text-align:center;
-}
-
-.course{
-	color:#FFF;
-	font-size:60px;
-}
-
-.chcourse{
-	color:#FFF;
-	font-size:25px;
-	margin-top:-30px;
-}
-
-#jtwo{
-	color:#FFF;
-	font-size:18px;
-}
-
-#jthree{
-	color:#000;
-	font-size:18px;
-}
-
-
-#timelineone{
-	float:left;
-	padding:20px;
-	margin-left:200px;
-	line-height:2em;
-}
-
-#timelinetwo{
-	float:left;
-	padding:20px;
-	margin-left:400px;
-	line-height:2em;
-	margin-top:-300px;
-}
-
-#conone{
-	padding:20px;
-	margin-top:20px;
-	width:730px;
-	height:300px;
-	line-height: 2em;
-	border-right-width:1px;
-	border-right-style: dashed;
-	border-right-color: #FFF;
-}
-
-#contwo{
-	float:left;
-	padding:20px;
-	margin-top:-300px;
-	line-height: 2em;
+	height:570px;
 }
 
 #detailbox{
 	background-color:#0C9;
-	margin-top:-43px;
 }
 
 .detail{
 	height:150px;
-	width:20%;
-	padding-top:50px;
+	width:10%;
 	float:left;
 	padding-left:100px;
 	text-align:center;
 }
 
-.detail p{
-	padding-left:30px;
-	width:150px;
-}
 #wde{
 	width:98%;
 }
 
+.detail p{
+	padding-left:35px;
+	width:100px;
+}
 #de{
-	padding:0px 20%;
+	padding:10px 20%;
 }
 
-
-/*活動細節結束*/
-
-/*我要報名開始*/
-
 #contactbox{
-	padding-top:100px;
-	clear:both;
-	height:650px;
-
+	padding-top:80px;
 }
 	.require{
 	    display:inline-block;
@@ -361,10 +221,18 @@ border-radius: 5px;
 font-size:14px;
 }
 
-/*我要報名結束*/
+@media only screen and (max-width: 320px) { 
+header{
+	background-image:url(images/pic01.jpg);
+	height:2000px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
 
-footer{
-	color:#FFF;
-	background-color:#694B39;
-	text-align:center;
+} 
+	
+@media only screen and (min-width: 769px) {
+	
+	
 }
